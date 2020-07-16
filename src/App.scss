@@ -67,6 +67,12 @@ input, button {
     font-size: 2.6rem;
     color: #fff;
   }
+
+  .command-input{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 button{
@@ -75,17 +81,17 @@ button{
 }
 
 .button-red{
-  background-color: red;
+  background-color: #ff1744;
   color: #fff;
 }
 
 .button-green{
-  background-color: green;
+  background-color: #00e676;
   color: #fff;
 }
 
 .button-blue{
-  background-color: blue;
+  background-color: #2979ff;
   color: #fff;
 }
 
