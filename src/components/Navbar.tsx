@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-function Navbar(){
+const Navbar:FunctionComponent = () => {
+    
     return(
         <nav className="navbar">
             <div className="navbar-title">
