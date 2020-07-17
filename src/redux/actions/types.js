@@ -1,2 +1,1 @@
-export const FETCH_COLOR = 'FETCH_COLOR'
 export const SEND_REQUEST = 'SEND_REQUEST'

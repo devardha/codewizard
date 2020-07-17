@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { NavLink } from 'react-router-dom'
 
 const Navbar:FunctionComponent = () => {
     
@@ -8,9 +9,9 @@ const Navbar:FunctionComponent = () => {
                 <h1>CodeWizard</h1>
             </div>
             <div className="navbar-items">
-                <a href="/">Home</a>
-                <a href="/cheatsheet">Cheatsheet</a>
-                <a href="/about">About</a>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/cheatsheet">Cheatsheet</NavLink>
+                <NavLink to="/about">About</NavLink>
                 <a href="https://github.com/dev-ardha/codewizard">GitHub</a>
             </div>
         </nav>

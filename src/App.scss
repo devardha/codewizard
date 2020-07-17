@@ -32,7 +32,7 @@ input, button {
   display:flex;
   align-items: center;
   padding: 0 5%;
-  position: absolute;
+  position: relative;
   color: #fff;
 
   .navbar-items{
@@ -50,6 +50,7 @@ input, button {
   height:400px;
   width:100%;
   display:flex;
+  margin-top: -60px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -127,6 +128,10 @@ input, button {
 .button-yellow{
   background-color: #ffea00;
   color: #000;
+}
+.button-dark{
+  background-color: #222;
+  color: #fff;
 }
 
 .window{

@@ -13,10 +13,9 @@ const FooterStyled = Styled.footer`
     height: 150px;
     display: flex;
     width: 100%;
-    margin-top: 3rem;
     justify-content: center;
     align-items: flex-end;
-    color: #4e4a75;
+    color: #5e5b73;
     text-align: center;
     padding-bottom: 2rem;
 `
