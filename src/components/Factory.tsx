@@ -42,17 +42,20 @@ function ComponentFactory({request}: any){
         }
 
         let color: string | undefined = setColor()
+        const customColor = request.match(/#[0-9a-f]{6}|#[0-9a-f]{3}/)
 
         const buttonStyle = {
             padding: '.75rem 1rem',
             border: 'none',
-            background: color,
+            background: customColor ? customColor : color,
             color: '#fff'
         }
 
+        const text = request.match(/(?<=")(.*)(?=")/)
+
         // Button
         if(buttonPattern.some(el => request?.includes(el))){
-            const html = <button style={buttonStyle}>Button</button>
+            const html = <button style={buttonStyle}>{text ? text[0] : 'Button'}</button>
 
             return(
                 html

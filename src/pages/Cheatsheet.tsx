@@ -9,19 +9,33 @@ function Cheatsheet(){
                 <h1>Cheatsheet</h1>
             </header>
             <div className="content">
-                <h3>Example</h3>
+                <h2>The Secret Words</h2>
+                <p>Basically you can use any command you want. Our system will detect your request and we will generate the component you want if the keyword exist in our database:)</p>
+                <h3>Basic Command</h3>
                 <ul>
                     <li>I want a button with color like an apple <span className="command">//generating one red button</span></li>
                     <li>One teal button <span className="command">//generating one teal button</span></li>
                     <li>I need two grape colored button <span className="command">//generating two purple button</span></li>
                 </ul>
-                <h3>Components</h3>
+                <h3>Custom Text</h3>
+                <p>if you want to use custom text, you can put your custom text between a "" (double quotes).</p>
+                <ul>
+                    <li>I need a red button with text "Click Me!" <span className="command">//generating one red button with text Click Me!</span></li>
+                    <li>Green "Download" button  <span className="command">//generating one green button with text Download</span></li>
+                </ul>
+                <h3>Custom Color</h3>
+                <p>if you want to use custom custom color, just put your hex color in the command. (Note: only support hex color format)</p>
+                <ul>
+                    <li>I need a button with color #111 <span className="command">//generating one dark button</span></li>
+                    <li>"Login" button with background color #1de9b6 <span className="command">//generating one button with text Download and background color teal</span></li>
+                </ul>
+                <h2>Components</h2>
                 <ul>
                     <li>Button</li>
                     <li>Card (Coming Soon)</li>
                     <li>Alert Box (Coming Soon)</li>
                 </ul>
-                <h3>Colors</h3>
+                <h2>Colors</h2>
                 <ol>
                     <li>
                         <div className="button-red"></div>
@@ -76,12 +90,32 @@ const PageStyled = Styled.div`
     padding-left:15%;
     padding-right:15%;
 
+    h1{
+        font-size:3rem;
+    }
+    h2{
+        color:#ff0099;
+    }
+
+    header{
+        border-bottom: 1px solid #252244;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+
     .command{
         color:#5e5b73;
         font-family: 'Source Code Pro', monospace;
         font-size: .9rem;
     }
     .content{
+        ul{
+            margin-bottom:2rem;
+
+            li{
+                margin-bottom:.3rem;
+            }
+        }
         ol{
             display: flex;
             justify-content: flex-start;

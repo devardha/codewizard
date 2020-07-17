@@ -6,8 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Cheatsheet from './pages/Cheatsheet';
 
-function App(props: any){
-
+function App(){
 
     return (
       <Router>
