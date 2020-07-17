@@ -5,10 +5,14 @@ import { connect } from 'react-redux'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Factory from './components/Factory';
+import Prism from "prismjs";
+import './assets/css/prism.css'
+import Footer from './components/Footer';
 
 function App(props: any){
 
   useEffect(() => {
+    Prism.highlightAll();
     props.fetchColor();
   })
 
@@ -17,6 +21,7 @@ function App(props: any){
         <Navbar/>
         <Header/>
         <Factory/>
+        <Footer/>
       </div>
     );
 }
